@@ -1,0 +1,247 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Hayleys Engineering
+          - heading "Face Link" [level=6] [ref=e10]
+          - generic [ref=e11]: v1.0 · HR + Attendance + Payroll
+        - button "Collapse sidebar" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: HR Operations
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Dashboard" [ref=e20] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e22]
+                - paragraph [ref=e25]: Dashboard
+            - listitem [ref=e26]:
+              - link "Worker Directory" [ref=e27] [cursor=pointer]:
+                - /url: /worker-directory
+                - img [ref=e29]
+                - paragraph [ref=e32]: Worker Directory
+            - listitem [ref=e33]:
+              - link "Supplier Registry" [ref=e34] [cursor=pointer]:
+                - /url: /supplier-registry
+                - img [ref=e36]
+                - paragraph [ref=e39]: Supplier Registry
+            - listitem [ref=e40]:
+              - link "Allocation Manager" [ref=e41] [cursor=pointer]:
+                - /url: /allocation-manager
+                - img [ref=e43]
+                - paragraph [ref=e46]: Allocation Manager
+            - listitem [ref=e47]:
+              - link "Attendance Board" [ref=e48] [cursor=pointer]:
+                - /url: /attendance-board
+                - img [ref=e50]
+                - paragraph [ref=e53]: Attendance Board
+            - listitem [ref=e54]:
+              - link "Roster Matrix" [ref=e55] [cursor=pointer]:
+                - /url: /roster-matrix
+                - img [ref=e57]
+                - paragraph [ref=e60]: Roster Matrix
+            - listitem [ref=e61]:
+              - link "Period Close" [ref=e62] [cursor=pointer]:
+                - /url: /period-close-dashboard
+                - img [ref=e64]
+                - paragraph [ref=e67]: Period Close
+        - generic [ref=e68]:
+          - separator [ref=e69]
+          - generic [ref=e70]: Configuration
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Identity & Access" [ref=e73] [cursor=pointer]:
+                - /url: /iam
+                - img [ref=e75]
+                - paragraph [ref=e79]: Identity & Access
+            - listitem [ref=e80]:
+              - link "Hierarchy Manager" [ref=e81] [cursor=pointer]:
+                - /url: /hierarchy
+                - img [ref=e83]
+                - paragraph [ref=e86]: Hierarchy Manager
+            - listitem [ref=e87]:
+              - link "Calendar Manager" [ref=e88] [cursor=pointer]:
+                - /url: /calendar
+                - img [ref=e90]
+                - paragraph [ref=e93]: Calendar Manager
+            - listitem [ref=e94]:
+              - link "Shift Configurator" [ref=e95] [cursor=pointer]:
+                - /url: /shift-configurator
+                - img [ref=e97]
+                - paragraph [ref=e101]: Shift Configurator
+            - listitem [ref=e102]:
+              - link "Rate Card Manager" [ref=e103] [cursor=pointer]:
+                - /url: /rate-card
+                - img [ref=e105]
+                - paragraph [ref=e108]: Rate Card Manager
+      - generic [ref=e109]:
+        - generic [ref=e110]: S
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: superadmin
+          - text: L13
+        - button "Sign out" [ref=e113] [cursor=pointer]:
+          - img [ref=e114]
+  - generic [ref=e116]:
+    - banner [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e120]: HR Operations
+        - button "Notifications" [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]: "5"
+        - generic "superadmin" [ref=e126] [cursor=pointer]: S
+    - main [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - heading "Worker Directory" [level=4] [ref=e130]
+          - button "Initiate Web Onboarding" [ref=e131] [cursor=pointer]:
+            - img [ref=e133]
+            - text: Initiate Web Onboarding
+        - generic [ref=e136]:
+          - generic [ref=e139]:
+            - combobox [ref=e140] [cursor=pointer]:
+              - emphasis [ref=e141]: All Companies
+            - textbox
+            - img
+            - group
+          - generic [ref=e144]:
+            - combobox [ref=e145] [cursor=pointer]:
+              - emphasis [ref=e146]: All Projects
+            - textbox
+            - img
+            - group
+          - generic [ref=e149]:
+            - combobox [ref=e150] [cursor=pointer]:
+              - emphasis [ref=e151]: All Sites
+            - textbox
+            - img
+            - group
+        - generic [ref=e152]:
+          - table [ref=e154]:
+            - rowgroup [ref=e155]:
+              - row "NIC / Passport Origin Name Category Status Actions" [ref=e156]:
+                - columnheader "NIC / Passport" [ref=e157]
+                - columnheader "Origin" [ref=e158]
+                - columnheader "Name" [ref=e159]
+                - columnheader "Category" [ref=e160]
+                - columnheader "Status" [ref=e161]
+                - columnheader "Actions" [ref=e162]
+            - rowgroup [ref=e163]:
+              - row "198512345678 Sunil Perera Executive Active View Profile" [ref=e164]:
+                - cell "198512345678" [ref=e165]
+                - cell [ref=e166]:
+                  - img [ref=e167]
+                - cell "Sunil Perera" [ref=e169]
+                - cell "Executive" [ref=e170]
+                - cell "Active" [ref=e171]:
+                  - generic [ref=e173]: Active
+                - cell "View Profile" [ref=e174]:
+                  - button "View Profile" [disabled]
+              - row "197534567890 Kamal Silva Supervisor Active View Profile" [ref=e175]:
+                - cell "197534567890" [ref=e176]
+                - cell [ref=e177]:
+                  - img [ref=e178]
+                - cell "Kamal Silva" [ref=e180]
+                - cell "Supervisor" [ref=e181]
+                - cell "Active" [ref=e182]:
+                  - generic [ref=e184]: Active
+                - cell "View Profile" [ref=e185]:
+                  - button "View Profile" [disabled]
+              - row "200112398765 Nimal Fernando Laborer Active View Profile" [ref=e186]:
+                - cell "200112398765" [ref=e187]
+                - cell [ref=e188]:
+                  - img [ref=e189]
+                - cell "Nimal Fernando" [ref=e191]
+                - cell "Laborer" [ref=e192]
+                - cell "Active" [ref=e193]:
+                  - generic [ref=e195]: Active
+                - cell "View Profile" [ref=e196]:
+                  - button "View Profile" [disabled]
+              - row "199845612340 Priya Mendis Executive Active View Profile" [ref=e197]:
+                - cell "199845612340" [ref=e198]
+                - cell [ref=e199]:
+                  - img [ref=e200]
+                - cell "Priya Mendis" [ref=e202]
+                - cell "Executive" [ref=e203]
+                - cell "Active" [ref=e204]:
+                  - generic [ref=e206]: Active
+                - cell "View Profile" [ref=e207]:
+                  - button "View Profile" [disabled]
+              - row "199367812345 Murugesan Selvam Laborer Active View Profile" [ref=e208]:
+                - cell "199367812345" [ref=e209]
+                - cell [ref=e210]:
+                  - img [ref=e211]
+                - cell "Murugesan Selvam" [ref=e213]
+                - cell "Laborer" [ref=e214]
+                - cell "Active" [ref=e215]:
+                  - generic [ref=e217]: Active
+                - cell "View Profile" [ref=e218]:
+                  - button "View Profile" [disabled]
+              - row "P7654321 Arjun Patel Supervisor Active View Profile" [ref=e219]:
+                - cell "P7654321" [ref=e220]
+                - cell [ref=e221]:
+                  - img [ref=e222]
+                - cell "Arjun Patel" [ref=e224]
+                - cell "Supervisor" [ref=e225]
+                - cell "Active" [ref=e226]:
+                  - generic [ref=e228]: Active
+                - cell "View Profile" [ref=e229]:
+                  - button "View Profile" [disabled]
+              - row "200398712345 Dilshan Kumara Laborer Active View Profile" [ref=e230]:
+                - cell "200398712345" [ref=e231]
+                - cell [ref=e232]:
+                  - img [ref=e233]
+                - cell "Dilshan Kumara" [ref=e235]
+                - cell "Laborer" [ref=e236]
+                - cell "Active" [ref=e237]:
+                  - generic [ref=e239]: Active
+                - cell "View Profile" [ref=e240]:
+                  - button "View Profile" [disabled]
+              - row "199587123456 Tharaka Bandara Laborer Active View Profile" [ref=e241]:
+                - cell "199587123456" [ref=e242]
+                - cell [ref=e243]:
+                  - img [ref=e244]
+                - cell "Tharaka Bandara" [ref=e246]
+                - cell "Laborer" [ref=e247]
+                - cell "Active" [ref=e248]:
+                  - generic [ref=e250]: Active
+                - cell "View Profile" [ref=e251]:
+                  - button "View Profile" [disabled]
+              - row "199012367890 Janaka Wijesinghe Laborer Active View Profile" [ref=e252]:
+                - cell "199012367890" [ref=e253]
+                - cell [ref=e254]:
+                  - img [ref=e255]
+                - cell "Janaka Wijesinghe" [ref=e257]
+                - cell "Laborer" [ref=e258]
+                - cell "Active" [ref=e259]:
+                  - generic [ref=e261]: Active
+                - cell "View Profile" [ref=e262]:
+                  - button "View Profile" [disabled]
+              - row "N1234567 Rajesh Kumar Supervisor Active View Profile" [ref=e263]:
+                - cell "N1234567" [ref=e264]
+                - cell [ref=e265]:
+                  - img [ref=e266]
+                - cell "Rajesh Kumar" [ref=e268]
+                - cell "Supervisor" [ref=e269]
+                - cell "Active" [ref=e270]:
+                  - generic [ref=e272]: Active
+                - cell "View Profile" [ref=e273]:
+                  - button "View Profile" [disabled]
+          - generic [ref=e275]:
+            - paragraph [ref=e276]: "Rows per page:"
+            - generic [ref=e277]:
+              - 'combobox "Rows per page: 10" [ref=e278] [cursor=pointer]': "10"
+              - textbox: "10"
+              - img
+            - paragraph [ref=e279]: 1–10 of 20
+            - generic [ref=e280]:
+              - button "Go to previous page" [disabled]:
+                - img
+              - button "Go to next page" [ref=e281] [cursor=pointer]:
+                - img [ref=e282]
+```

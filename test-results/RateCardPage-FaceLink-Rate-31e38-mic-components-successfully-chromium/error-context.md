@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img [ref=e7]
+      - heading "Face Link" [level=5] [ref=e9]
+      - generic [ref=e10]: Hayleys Engineering
+    - generic [ref=e11]:
+      - heading "Workforce Management, Simplified." [level=3] [ref=e12]:
+        - text: Workforce
+        - text: Management,
+        - text: Simplified.
+      - paragraph [ref=e13]: HR · Attendance · Payroll — all in one unified platform built for modern engineering operations.
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: HR Operations
+        - generic [ref=e17]: Attendance
+        - generic [ref=e18]: Payroll
+      - generic [ref=e19]: v1.0 · © 2026 Hayleys Engineering
+  - generic [ref=e21]:
+    - heading "Welcome back" [level=4] [ref=e22]
+    - paragraph [ref=e23]: Sign in to continue to your workspace
+    - generic [ref=e24]:
+      - generic [ref=e25]: Username or Email
+      - generic [ref=e27]:
+        - img [ref=e29]
+        - textbox "you@company.com" [ref=e31]: superadmin@advantis.com
+        - group
+      - generic [ref=e32]: Password
+      - generic [ref=e34]:
+        - img [ref=e36]
+        - textbox "••••••••" [ref=e38]: Admin1234!
+        - button [ref=e40] [cursor=pointer]:
+          - img [ref=e41]
+        - group
+      - alert [ref=e43]:
+        - img [ref=e45]
+        - generic [ref=e47]: Invalid credentials. Please try again.
+      - button "Sign In" [ref=e48] [cursor=pointer]: Sign In
+    - generic [ref=e49]: Protected by enterprise-grade security
+```

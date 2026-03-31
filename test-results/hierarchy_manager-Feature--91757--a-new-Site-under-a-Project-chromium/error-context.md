@@ -1,0 +1,168 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Hayleys Engineering
+          - heading "Face Link" [level=6] [ref=e10]
+          - generic [ref=e11]: v1.0 · HR + Attendance + Payroll
+        - button "Collapse sidebar" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: HR Operations
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Dashboard" [ref=e20] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e22]
+                - paragraph [ref=e25]: Dashboard
+            - listitem [ref=e26]:
+              - link "Worker Directory" [ref=e27] [cursor=pointer]:
+                - /url: /worker-directory
+                - img [ref=e29]
+                - paragraph [ref=e32]: Worker Directory
+            - listitem [ref=e33]:
+              - link "Supplier Registry" [ref=e34] [cursor=pointer]:
+                - /url: /supplier-registry
+                - img [ref=e36]
+                - paragraph [ref=e39]: Supplier Registry
+            - listitem [ref=e40]:
+              - link "Allocation Manager" [ref=e41] [cursor=pointer]:
+                - /url: /allocation-manager
+                - img [ref=e43]
+                - paragraph [ref=e46]: Allocation Manager
+            - listitem [ref=e47]:
+              - link "Attendance Board" [ref=e48] [cursor=pointer]:
+                - /url: /attendance-board
+                - img [ref=e50]
+                - paragraph [ref=e53]: Attendance Board
+            - listitem [ref=e54]:
+              - link "Roster Matrix" [ref=e55] [cursor=pointer]:
+                - /url: /roster-matrix
+                - img [ref=e57]
+                - paragraph [ref=e60]: Roster Matrix
+            - listitem [ref=e61]:
+              - link "Period Close" [ref=e62] [cursor=pointer]:
+                - /url: /period-close-dashboard
+                - img [ref=e64]
+                - paragraph [ref=e67]: Period Close
+        - generic [ref=e68]:
+          - separator [ref=e69]
+          - generic [ref=e70]: Configuration
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Identity & Access" [ref=e73] [cursor=pointer]:
+                - /url: /iam
+                - img [ref=e75]
+                - paragraph [ref=e79]: Identity & Access
+            - listitem [ref=e80]:
+              - link "Hierarchy Manager" [ref=e81] [cursor=pointer]:
+                - /url: /hierarchy
+                - img [ref=e83]
+                - paragraph [ref=e86]: Hierarchy Manager
+            - listitem [ref=e87]:
+              - link "Calendar Manager" [ref=e88] [cursor=pointer]:
+                - /url: /calendar
+                - img [ref=e90]
+                - paragraph [ref=e93]: Calendar Manager
+            - listitem [ref=e94]:
+              - link "Shift Configurator" [ref=e95] [cursor=pointer]:
+                - /url: /shift-configurator
+                - img [ref=e97]
+                - paragraph [ref=e101]: Shift Configurator
+            - listitem [ref=e102]:
+              - link "Rate Card Manager" [ref=e103] [cursor=pointer]:
+                - /url: /rate-card
+                - img [ref=e105]
+                - paragraph [ref=e108]: Rate Card Manager
+      - generic [ref=e109]:
+        - generic [ref=e110]: S
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: superadmin
+          - text: L13
+        - button "Sign out" [ref=e113] [cursor=pointer]:
+          - img [ref=e114]
+  - generic [ref=e116]:
+    - banner [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e120]: Configuration
+        - button "Notifications" [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]: "5"
+        - generic "superadmin" [ref=e126] [cursor=pointer]: S
+    - main [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "Organization" [level=6] [ref=e131]
+            - button "Company" [ref=e132] [cursor=pointer]:
+              - img [ref=e134]
+              - text: Company
+          - separator [ref=e136]
+          - navigation [ref=e137]:
+            - button "Hayley's Engineering (Pvt) Ltd" [ref=e138] [cursor=pointer]:
+              - img [ref=e139]
+              - generic [ref=e142]: Hayley's Engineering (Pvt) Ltd
+              - img [ref=e143]
+            - generic [ref=e148]:
+              - button "Metro Line Extension — Phase 2" [ref=e149] [cursor=pointer]:
+                - img [ref=e150]
+                - generic [ref=e153]: Metro Line Extension — Phase 2
+                - img [ref=e154]
+              - generic [ref=e159]:
+                - button "Station A — Underground Works STN01" [ref=e160] [cursor=pointer]:
+                  - img [ref=e161]
+                  - generic [ref=e163]:
+                    - generic [ref=e164]: Station A — Underground Works
+                    - paragraph [ref=e165]: STN01
+                - button "Station B — Platform Section STN02" [ref=e166] [cursor=pointer]:
+                  - img [ref=e167]
+                  - generic [ref=e169]:
+                    - generic [ref=e170]: Station B — Platform Section
+                    - paragraph [ref=e171]: STN02
+                - button "Station C — Ventilation Shaft (INACTIVE) STN03" [ref=e172] [cursor=pointer]:
+                  - img [ref=e173]
+                  - generic [ref=e175]:
+                    - generic [ref=e176]: Station C — Ventilation Shaft (INACTIVE)
+                    - paragraph [ref=e177]: STN03
+                - button "Site Gamma GAM01" [ref=e178] [cursor=pointer]:
+                  - img [ref=e179]
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: Site Gamma
+                    - paragraph [ref=e183]: GAM01
+                - button "Site Gamma GAM01" [ref=e184] [cursor=pointer]:
+                  - img [ref=e185]
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: Site Gamma
+                    - paragraph [ref=e189]: GAM01
+                - button "Site Delta DEL01" [ref=e190] [cursor=pointer]:
+                  - img [ref=e191]
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Site Delta
+                    - paragraph [ref=e195]: DEL01
+                - button "Site Delta DEL01" [ref=e196] [cursor=pointer]:
+                  - img [ref=e197]
+                  - generic [ref=e199]:
+                    - generic [ref=e200]: Site Delta
+                    - paragraph [ref=e201]: DEL01
+              - button "HQ Furniture Fabrication Factory" [ref=e202] [cursor=pointer]:
+                - img [ref=e203]
+                - generic [ref=e206]: HQ Furniture Fabrication Factory
+                - img [ref=e207]
+            - button "AgriCorp (Pvt) Ltd" [ref=e209] [cursor=pointer]:
+              - img [ref=e210]
+              - generic [ref=e213]: AgriCorp (Pvt) Ltd
+              - img [ref=e214]
+        - generic [ref=e218]:
+          - generic [ref=e219]: PROJECT DETAILS
+          - heading "Metro Line Extension — Phase 2" [level=4] [ref=e220]
+          - separator [ref=e221]
+          - button "Add Site to Metro Line Extension — Phase 2" [active] [ref=e223] [cursor=pointer]:
+            - img [ref=e225]
+            - text: Add Site to Metro Line Extension — Phase 2
+```

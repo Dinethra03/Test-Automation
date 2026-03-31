@@ -1,0 +1,2023 @@
+﻿{
+  "config": {
+    "configFile": "C:\\Users\\dunit\\Desktop\\Test Automation\\playwright.config.ts",
+    "rootDir": "C:/Users/dunit/Desktop/Test Automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/dunit/Desktop/Test Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/dunit/Desktop/Test Automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "AllocationMgrPage.spec.ts",
+      "file": "AllocationMgrPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink AllocationMgrPage Tests",
+          "file": "AllocationMgrPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30293,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mAllocationMgrPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: AllocationMgrPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new AllocationMgrPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:10.440Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\AllocationMgrPage-FaceLink-ddadc-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\AllocationMgrPage-FaceLink-ddadc-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AllocationMgrPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "32427c42d7f534b74205-d6fcb6dff36883393bcb",
+              "file": "AllocationMgrPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "AttendanceBdPage.spec.ts",
+      "file": "AttendanceBdPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink AttendanceBdPage Tests",
+          "file": "AttendanceBdPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30322,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mAttendanceBdPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: AttendanceBdPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new AttendanceBdPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:10.701Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\AttendanceBdPage-FaceLink--90479-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\AttendanceBdPage-FaceLink--90479-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\AttendanceBdPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "42048df8ec0082949192-fecfeed92692b9cc7667",
+              "file": "AttendanceBdPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CalendarPage.spec.ts",
+      "file": "CalendarPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink CalendarPage Tests",
+          "file": "CalendarPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30281,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mCalendarPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: CalendarPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new CalendarPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:10.512Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\CalendarPage-FaceLink-Cale-a76f0-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\CalendarPage-FaceLink-Cale-a76f0-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\CalendarPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5de0ab8936611325bd5d-1c540eb3eecf9bad5688",
+              "file": "CalendarPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard.spec.ts",
+      "file": "dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink Dashboard Tests",
+          "file": "dashboard.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load dashboard features correctly",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30415,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m dashboardPage\u001b[33m:\u001b[39m \u001b[33mDashboardPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Authenticate first using our proxy login functionality\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let dashboardPage: DashboardPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     // Authenticate first using our proxy login functionality\n  10 |     const loginPage = new LoginPage(page);\n  11 |     await loginPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts",
+                            "column": 16,
+                            "line": 13
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  11 |     await loginPage.navigate();\n  12 |     await loginPage.login('testuser@cultive8.lk', 'password123'); // MSW handles mock auth\n> 13 |     await page.waitForURL('**/dashboard');\n     |                ^\n  14 |     \n  15 |     dashboardPage = new DashboardPage(page);\n  16 |   });\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts:13:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:10.582Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\dashboard-FaceLink-Dashboa-a820a-ashboard-features-correctly-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\dashboard-FaceLink-Dashboa-a820a-ashboard-features-correctly-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\dashboard.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "90cda532ab82d274b30b-8ae7af3b1a6b559c5347",
+              "file": "dashboard.spec.ts",
+              "line": 18,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "hierarchy_manager.spec.ts",
+      "file": "hierarchy_manager.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Feature 2.1: Hierarchy Manager (US 2.1)",
+          "file": "hierarchy_manager.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Should successfully add a new Site under a Project",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30219,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m hierarchyPage\u001b[33m:\u001b[39m \u001b[33mHierarchyPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'admin@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let hierarchyPage: HierarchyPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     hierarchyPage = new HierarchyPage(page);\n  15 |     await hierarchyPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:48.156Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--91757--a-new-Site-under-a-Project-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--91757--a-new-Site-under-a-Project-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1ef36223eb3359cbff20-950e65c62270e4553659",
+              "file": "hierarchy_manager.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Location Code should reject more than 5 characters",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30219,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m hierarchyPage\u001b[33m:\u001b[39m \u001b[33mHierarchyPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'admin@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let hierarchyPage: HierarchyPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     hierarchyPage = new HierarchyPage(page);\n  15 |     await hierarchyPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:48.178Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--69517-ject-more-than-5-characters-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--69517-ject-more-than-5-characters-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1ef36223eb3359cbff20-4cb6276a03642dd85cba",
+              "file": "hierarchy_manager.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Should prevent orphan site creation without project selection",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30287,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m hierarchyPage\u001b[33m:\u001b[39m \u001b[33mHierarchyPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'admin@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let hierarchyPage: HierarchyPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('admin@facelink.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     hierarchyPage = new HierarchyPage(page);\n  15 |     await hierarchyPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:48.438Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--c6491-n-without-project-selection-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy_manager-Feature--c6491-n-without-project-selection-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy_manager.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1ef36223eb3359cbff20-c83c6850109fbca6f6a8",
+              "file": "hierarchy_manager.spec.ts",
+              "line": 49,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "hierarchy.spec.ts",
+      "file": "hierarchy.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink Hierarchy Tests",
+          "file": "hierarchy.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load Hierarchy elements correctly",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30408,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m hierarchyPage\u001b[33m:\u001b[39m \u001b[33mHierarchyPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let hierarchyPage: HierarchyPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser', 'password');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser', 'password');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     hierarchyPage = new HierarchyPage(page);\n  15 |     await hierarchyPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T05:59:48.936Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy-FaceLink-Hierarc-e50d6-ierarchy-elements-correctly-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\hierarchy-FaceLink-Hierarc-e50d6-ierarchy-elements-correctly-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\hierarchy.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2343872df80cab5be60a-0a341df36e747d5a17f1",
+              "file": "hierarchy.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "iam.spec.ts",
+      "file": "iam.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink Identity & Access (IAM) Tests",
+          "file": "iam.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should correctly load the IAM tabs and controls",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30293,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m iamPage\u001b[33m:\u001b[39m \u001b[33mIamPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let iamPage: IamPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     iamPage = new IamPage(page);\n  15 |     await iamPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:24.590Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\iam-FaceLink-Identity-Acce-c1077-d-the-IAM-tabs-and-controls-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\iam-FaceLink-Identity-Acce-c1077-d-the-IAM-tabs-and-controls-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ff5e0ea260e291d6fcdb-87156af7c347c0e6bbd9",
+              "file": "iam.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "should navigate to Employee Master tab",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30177,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m iamPage\u001b[33m:\u001b[39m \u001b[33mIamPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let iamPage: IamPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     iamPage = new IamPage(page);\n  15 |     await iamPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:24.565Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\iam-FaceLink-Identity-Acce-9283c-gate-to-Employee-Master-tab-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\iam-FaceLink-Identity-Acce-9283c-gate-to-Employee-Master-tab-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\iam.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ff5e0ea260e291d6fcdb-12fdd3aa42a67fcf5131",
+              "file": "iam.spec.ts",
+              "line": 32,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink Login Tests",
+          "file": "login.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load the login page correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1882,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:25.688Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-589ccec8bf8b58fb61bf",
+              "file": "login.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should successfully log in with mock credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30296,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\login.spec.ts",
+                            "column": 16,
+                            "line": 29
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  27 |     // Wait for the URL to change to the dashboard\n  28 |     // Based on the subagent\\'s observations, the mock service worker bypasses auth and goes to dashboard\n> 29 |     await page.waitForURL('**/dashboard');\n     |                ^\n  30 |     expect(page.url()).toContain('/dashboard');\n  31 |   });\n  32 |\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\login.spec.ts:29:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:26.253Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\login-FaceLink-Login-Tests-ad9fc-og-in-with-mock-credentials-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\login-FaceLink-Login-Tests-ad9fc-og-in-with-mock-credentials-chromium\\error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-71e782f730ac76b58434",
+              "file": "login.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "should log in bypassing credentials (allowed by mock backend)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1770,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:27.890Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-c73569a15944137536d4",
+              "file": "login.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "should toggle password visibility",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1218,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:29.714Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-de565e42079bbf3ecf8f",
+              "file": "login.spec.ts",
+              "line": 42,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PeriodClosePage.spec.ts",
+      "file": "PeriodClosePage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink PeriodClosePage Tests",
+          "file": "PeriodClosePage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30341,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mPeriodClosePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: PeriodClosePage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new PeriodClosePage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:30.972Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\PeriodClosePage-FaceLink-P-7c62b-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\PeriodClosePage-FaceLink-P-7c62b-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\PeriodClosePage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5f743eb50601d1b66fda-e15e584b3d148a42d760",
+              "file": "PeriodClosePage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RateCardPage.spec.ts",
+      "file": "RateCardPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink RateCardPage Tests",
+          "file": "RateCardPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30169,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mRateCardPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: RateCardPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new RateCardPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:00:59.971Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\RateCardPage-FaceLink-Rate-31e38-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\RateCardPage-FaceLink-Rate-31e38-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RateCardPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6957fb358073108ccd0c-7ec9fe6b0b87038c7f22",
+              "file": "RateCardPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "RosterMatrixPage.spec.ts",
+      "file": "RosterMatrixPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink RosterMatrixPage Tests",
+          "file": "RosterMatrixPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30200,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mRosterMatrixPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: RosterMatrixPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new RosterMatrixPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:00.120Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\RosterMatrixPage-FaceLink--bc098-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\RosterMatrixPage-FaceLink--bc098-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\RosterMatrixPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5f840ccaf40cad7579d7-c9e1767bcc8783be2816",
+              "file": "RosterMatrixPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "shift_configurator.spec.ts",
+      "file": "shift_configurator.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Feature 2.2: Shift & Roster Configurator (US 2.2)",
+          "file": "shift_configurator.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Happy Path: Should successfully change shift rules",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30295,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m shiftPage\u001b[33m:\u001b[39m \u001b[33mShiftPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'ops@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pass888'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let shiftPage: ShiftPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     shiftPage = new ShiftPage(page);\n  15 |     await shiftPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:02.571Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-585eb-essfully-change-shift-rules-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-585eb-essfully-change-shift-rules-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "48cf11940071d278bd0c-8a0eade0a2d4f715dda0",
+              "file": "shift_configurator.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Save button should remain disabled before any change",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30327,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m shiftPage\u001b[33m:\u001b[39m \u001b[33mShiftPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'ops@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pass888'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let shiftPage: ShiftPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     shiftPage = new ShiftPage(page);\n  15 |     await shiftPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:05.736Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-ab70e--disabled-before-any-change-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-ab70e--disabled-before-any-change-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "48cf11940071d278bd0c-ae9f6a84ab0a891fe305",
+              "file": "shift_configurator.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Grace period should not exceed 60 minutes",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30182,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m shiftPage\u001b[33m:\u001b[39m \u001b[33mShiftPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'ops@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pass888'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let shiftPage: ShiftPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     shiftPage = new ShiftPage(page);\n  15 |     await shiftPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:33.988Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-d7ea3-hould-not-exceed-60-minutes-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-d7ea3-hould-not-exceed-60-minutes-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "48cf11940071d278bd0c-cbe6d94b1f453aba9b9e",
+              "file": "shift_configurator.spec.ts",
+              "line": 37,
+              "column": 7
+            },
+            {
+              "title": "Negative Case: Should block saving if no working days are selected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30271,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m shiftPage\u001b[33m:\u001b[39m \u001b[33mShiftPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'ops@facelink.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'pass888'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let shiftPage: ShiftPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('ops@facelink.lk', 'pass888');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     shiftPage = new ShiftPage(page);\n  15 |     await shiftPage.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:34.724Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-fdd07-o-working-days-are-selected-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\shift_configurator-Feature-fdd07-o-working-days-are-selected-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\shift_configurator.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "48cf11940071d278bd0c-23d8af0edef0bf099fb6",
+              "file": "shift_configurator.spec.ts",
+              "line": 43,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ShiftPage.spec.ts",
+      "file": "ShiftPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink ShiftPage Tests",
+          "file": "ShiftPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 30256,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mShiftPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: ShiftPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new ShiftPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:38.110Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\ShiftPage-FaceLink-ShiftPa-ab13c-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\ShiftPage-FaceLink-ShiftPa-ab13c-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\ShiftPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7df375c31d64e739c5f3-12f5b105b795aa647f40",
+              "file": "ShiftPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SupplierRegPage.spec.ts",
+      "file": "SupplierRegPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink SupplierRegPage Tests",
+          "file": "SupplierRegPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30199,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mSupplierRegPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: SupplierRegPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new SupplierRegPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:01:40.554Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\SupplierRegPage-FaceLink-S-57357-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\SupplierRegPage-FaceLink-S-57357-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\SupplierRegPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5c4c0314c8eecdb7a643-169b829f108944a12a12",
+              "file": "SupplierRegPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "WorkerDirPage.spec.ts",
+      "file": "WorkerDirPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FaceLink WorkerDirPage Tests",
+          "file": "WorkerDirPage.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load all dynamic components successfully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30169,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts:8:8",
+                        "location": {
+                          "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts",
+                          "column": 8,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m   \u001b[36mlet\u001b[39m pageObject\u001b[33m:\u001b[39m \u001b[33mWorkerDirPage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigate()\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(\u001b[32m'testuser@cultive8.lk'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'password123'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts",
+                            "column": 8,
+                            "line": 8
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n   6 |   let pageObject: WorkerDirPage;\n   7 |\n>  8 |   test.beforeEach(async ({ page }) => {\n     |        ^\n   9 |     const loginPage = new LoginPage(page);\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts:8:8"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts",
+                            "column": 16,
+                            "line": 12
+                          },
+                          "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/dashboard\" until \"load\"\n============================================================\n\n  10 |     await loginPage.navigate();\n  11 |     await loginPage.login('testuser@cultive8.lk', 'password123');\n> 12 |     await page.waitForURL('**/dashboard');\n     |                ^\n  13 |     \n  14 |     pageObject = new WorkerDirPage(page);\n  15 |     await pageObject.navigate();\n    at C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts:12:16"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-31T06:02:07.324Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\WorkerDirPage-FaceLink-Wor-5a912-mic-components-successfully-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\dunit\\Desktop\\Test Automation\\test-results\\WorkerDirPage-FaceLink-Wor-5a912-mic-components-successfully-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\dunit\\Desktop\\Test Automation\\tests\\WorkerDirPage.spec.ts",
+                        "column": 8,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8043bf11b0e030cbeb18-a6bb4a9eed9f1f405d66",
+              "file": "WorkerDirPage.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-31T05:59:04.945Z",
+    "duration": 212960.671,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 21,
+    "flaky": 0
+  }
+}
