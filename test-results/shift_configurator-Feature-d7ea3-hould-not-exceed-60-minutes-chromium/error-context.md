@@ -2,231 +2,42 @@
 
 ```yaml
 - generic [ref=e3]:
-  - navigation [ref=e4]:
-    - generic [ref=e6]:
-      - generic [ref=e7]:
-        - generic [ref=e8]:
-          - generic [ref=e9]: Hayleys Engineering
-          - heading "Face Link" [level=6] [ref=e10]
-          - generic [ref=e11]: v1.0 · HR + Attendance + Payroll
-        - button "Collapse sidebar" [ref=e12] [cursor=pointer]:
-          - img [ref=e13]
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img [ref=e7]
+      - heading "Face Link" [level=5] [ref=e9]
+      - generic [ref=e10]: Hayleys Engineering
+    - generic [ref=e11]:
+      - heading "Workforce Management, Simplified." [level=3] [ref=e12]:
+        - text: Workforce
+        - text: Management,
+        - text: Simplified.
+      - paragraph [ref=e13]: HR · Attendance · Payroll — all in one unified platform built for modern engineering operations.
+    - generic [ref=e14]:
       - generic [ref=e15]:
-        - generic [ref=e16]:
-          - generic [ref=e17]: HR Operations
-          - list [ref=e18]:
-            - listitem [ref=e19]:
-              - link "Dashboard" [ref=e20] [cursor=pointer]:
-                - /url: /dashboard
-                - img [ref=e22]
-                - paragraph [ref=e25]: Dashboard
-            - listitem [ref=e26]:
-              - link "Worker Directory" [ref=e27] [cursor=pointer]:
-                - /url: /worker-directory
-                - img [ref=e29]
-                - paragraph [ref=e32]: Worker Directory
-            - listitem [ref=e33]:
-              - link "Supplier Registry" [ref=e34] [cursor=pointer]:
-                - /url: /supplier-registry
-                - img [ref=e36]
-                - paragraph [ref=e39]: Supplier Registry
-            - listitem [ref=e40]:
-              - link "Allocation Manager" [ref=e41] [cursor=pointer]:
-                - /url: /allocation-manager
-                - img [ref=e43]
-                - paragraph [ref=e46]: Allocation Manager
-            - listitem [ref=e47]:
-              - link "Attendance Board" [ref=e48] [cursor=pointer]:
-                - /url: /attendance-board
-                - img [ref=e50]
-                - paragraph [ref=e53]: Attendance Board
-            - listitem [ref=e54]:
-              - link "Roster Matrix" [ref=e55] [cursor=pointer]:
-                - /url: /roster-matrix
-                - img [ref=e57]
-                - paragraph [ref=e60]: Roster Matrix
-            - listitem [ref=e61]:
-              - link "Period Close" [ref=e62] [cursor=pointer]:
-                - /url: /period-close-dashboard
-                - img [ref=e64]
-                - paragraph [ref=e67]: Period Close
-        - generic [ref=e68]:
-          - separator [ref=e69]
-          - generic [ref=e70]: Configuration
-          - list [ref=e71]:
-            - listitem [ref=e72]:
-              - link "Identity & Access" [ref=e73] [cursor=pointer]:
-                - /url: /iam
-                - img [ref=e75]
-                - paragraph [ref=e79]: Identity & Access
-            - listitem [ref=e80]:
-              - link "Hierarchy Manager" [ref=e81] [cursor=pointer]:
-                - /url: /hierarchy
-                - img [ref=e83]
-                - paragraph [ref=e86]: Hierarchy Manager
-            - listitem [ref=e87]:
-              - link "Calendar Manager" [ref=e88] [cursor=pointer]:
-                - /url: /calendar
-                - img [ref=e90]
-                - paragraph [ref=e93]: Calendar Manager
-            - listitem [ref=e94]:
-              - link "Shift Configurator" [ref=e95] [cursor=pointer]:
-                - /url: /shift-configurator
-                - img [ref=e97]
-                - paragraph [ref=e101]: Shift Configurator
-            - listitem [ref=e102]:
-              - link "Rate Card Manager" [ref=e103] [cursor=pointer]:
-                - /url: /rate-card
-                - img [ref=e105]
-                - paragraph [ref=e108]: Rate Card Manager
-      - generic [ref=e109]:
-        - generic [ref=e110]: S
-        - generic [ref=e111]:
-          - paragraph [ref=e112]: superadmin
-          - text: L13
-        - button "Sign out" [ref=e113] [cursor=pointer]:
-          - img [ref=e114]
-  - generic [ref=e116]:
-    - banner [ref=e117]:
-      - generic [ref=e118]:
-        - generic [ref=e120]: Configuration
-        - button "Notifications" [ref=e121] [cursor=pointer]:
-          - generic [ref=e122]:
-            - img [ref=e123]
-            - generic [ref=e125]: "5"
-        - generic "superadmin" [ref=e126] [cursor=pointer]: S
-    - main [ref=e127]:
-      - generic [ref=e128]:
-        - heading "Shift & Roster Configuration" [level=4] [ref=e129]
-        - paragraph [ref=e130]: Define standard working hours, grace periods, and overtime triggers for different worker categories.
-        - generic [ref=e131]:
-          - tablist [ref=e135]:
-            - tab "Gen1 (Executive)" [selected] [ref=e136] [cursor=pointer]
-            - tab "Gen2 (Exec Alt)" [ref=e137] [cursor=pointer]
-            - tab "Sup1 (Supervisory)" [ref=e138] [cursor=pointer]
-            - tab "Man1 (Manual Labor)" [ref=e139] [cursor=pointer]
-          - generic [ref=e141]:
-            - heading "Daily Timeline & Overtime Triggers" [level=6] [ref=e142]:
-              - img [ref=e143]
-              - text: Daily Timeline & Overtime Triggers
-            - separator [ref=e146]
-            - generic [ref=e147]:
-              - generic [ref=e148]:
-                - generic: Pre-OT Starts At
-                - group "Pre-OT Starts At" [ref=e149]:
-                  - generic [ref=e150]:
-                    - generic [ref=e151]:
-                      - spinbutton "Hours" [ref=e152]: hh
-                      - text: ":"
-                    - spinbutton "Minutes" [ref=e154]: mm
-                    - spinbutton "Meridiem" [ref=e156]: aa
-                  - button "Choose time" [ref=e158] [cursor=pointer]:
-                    - img [ref=e159]
-                  - group:
-                    - generic: Pre-OT Starts At
-                  - textbox [ref=e162]
-              - generic [ref=e163]:
-                - generic: Official Shift Start
-                - group "Official Shift Start" [ref=e164]:
-                  - generic [ref=e165]:
-                    - generic [ref=e166]:
-                      - spinbutton "Hours" [ref=e167]: hh
-                      - text: ":"
-                    - spinbutton "Minutes" [ref=e169]: mm
-                    - spinbutton "Meridiem" [ref=e171]: aa
-                  - button "Choose time" [ref=e173] [cursor=pointer]:
-                    - img [ref=e174]
-                  - group:
-                    - generic: Official Shift Start
-                  - textbox [ref=e177]
-              - generic [ref=e178]:
-                - generic: Official Shift End
-                - group "Official Shift End" [ref=e179]:
-                  - generic [ref=e180]:
-                    - generic [ref=e181]:
-                      - spinbutton "Hours" [ref=e182]: hh
-                      - text: ":"
-                    - spinbutton "Minutes" [ref=e184]: mm
-                    - spinbutton "Meridiem" [ref=e186]: aa
-                  - button "Choose time" [ref=e188] [cursor=pointer]:
-                    - img [ref=e189]
-                  - group:
-                    - generic: Official Shift End
-                  - textbox [ref=e192]
-              - generic [ref=e193]:
-                - generic: Post-OT Starts At
-                - group "Post-OT Starts At" [ref=e194]:
-                  - generic [ref=e195]:
-                    - generic [ref=e196]:
-                      - spinbutton "Hours" [ref=e197]: hh
-                      - text: ":"
-                    - spinbutton "Minutes" [ref=e199]: mm
-                    - spinbutton "Meridiem" [ref=e201]: aa
-                  - button "Choose time" [ref=e203] [cursor=pointer]:
-                    - img [ref=e204]
-                  - group:
-                    - generic: Post-OT Starts At
-                  - textbox [ref=e207]
-            - heading "Grace Period Rules" [level=6] [ref=e208]
-            - separator [ref=e209]
-            - generic [ref=e210]:
-              - generic [ref=e211]:
-                - generic [ref=e212]: In-Time Grace Period
-                - generic [ref=e213]:
-                  - spinbutton "In-Time Grace Period" [ref=e214]: "75"
-                  - paragraph [ref=e216]: minutes
-                  - group:
-                    - generic: In-Time Grace Period
-              - generic [ref=e217]:
-                - generic [ref=e218]: Out-Time Grace Period
-                - generic [ref=e219]:
-                  - spinbutton "Out-Time Grace Period" [active] [ref=e220]: "15"
-                  - paragraph [ref=e222]: minutes
-                  - group:
-                    - generic: Out-Time Grace Period
-            - heading "Applicable Working Days" [level=6] [ref=e223]
-            - separator [ref=e224]
-            - generic [ref=e225]:
-              - generic [ref=e226] [cursor=pointer]:
-                - generic [ref=e227]:
-                  - checkbox "Monday" [ref=e228]
-                  - img [ref=e229]
-                - generic [ref=e231]: Monday
-              - generic [ref=e232] [cursor=pointer]:
-                - generic [ref=e233]:
-                  - checkbox "Tuesday" [checked] [ref=e234]
-                  - img [ref=e235]
-                - generic [ref=e237]: Tuesday
-              - generic [ref=e238] [cursor=pointer]:
-                - generic [ref=e239]:
-                  - checkbox "Wednesday" [checked] [ref=e240]
-                  - img [ref=e241]
-                - generic [ref=e243]: Wednesday
-              - generic [ref=e244] [cursor=pointer]:
-                - generic [ref=e245]:
-                  - checkbox "Thursday" [checked] [ref=e246]
-                  - img [ref=e247]
-                - generic [ref=e249]: Thursday
-              - generic [ref=e250] [cursor=pointer]:
-                - generic [ref=e251]:
-                  - checkbox "Friday" [checked] [ref=e252]
-                  - img [ref=e253]
-                - generic [ref=e255]: Friday
-              - generic [ref=e256] [cursor=pointer]:
-                - generic [ref=e257]:
-                  - checkbox "Saturday" [ref=e258]
-                  - img [ref=e259]
-                - generic [ref=e261]: Saturday
-              - generic [ref=e262] [cursor=pointer]:
-                - generic [ref=e263]:
-                  - checkbox "Sunday" [ref=e264]
-                  - img [ref=e265]
-                - generic [ref=e267]: Sunday
-            - generic [ref=e268]:
-              - button "Discard Changes" [ref=e269] [cursor=pointer]:
-                - img [ref=e271]
-                - text: Discard Changes
-              - button "Save Gen1 Rules" [ref=e273] [cursor=pointer]:
-                - img [ref=e275]
-                - text: Save Gen1 Rules
+        - generic [ref=e16]: HR Operations
+        - generic [ref=e17]: Attendance
+        - generic [ref=e18]: Payroll
+      - generic [ref=e19]: v1.0 · © 2026 Hayleys Engineering
+  - generic [ref=e21]:
+    - heading "Welcome back" [level=4] [ref=e22]
+    - paragraph [ref=e23]: Sign in to continue to your workspace
+    - generic [ref=e24]:
+      - generic [ref=e25]: Username or Email
+      - generic [ref=e27]:
+        - img [ref=e29]
+        - textbox "you@company.com" [ref=e31]: superadmin@advantis.com
+        - group
+      - generic [ref=e32]: Password
+      - generic [ref=e34]:
+        - img [ref=e36]
+        - textbox "••••••••" [ref=e38]: Admin1234!
+        - button [ref=e40] [cursor=pointer]:
+          - img [ref=e41]
+        - group
+      - alert [ref=e43]:
+        - img [ref=e45]
+        - generic [ref=e47]: Invalid credentials. Please try again.
+      - button "Sign In" [ref=e48] [cursor=pointer]: Sign In
+    - generic [ref=e49]: Protected by enterprise-grade security
 ```
