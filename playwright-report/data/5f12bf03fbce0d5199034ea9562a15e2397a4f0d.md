@@ -1,0 +1,637 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Hayleys Engineering
+          - heading "Face Link" [level=6] [ref=e10]
+          - generic [ref=e11]: v1.0 · HR + Attendance + Payroll
+        - button "Collapse sidebar" [ref=e12] [cursor=pointer]:
+          - img [ref=e13]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]: HR Operations
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Dashboard" [ref=e20] [cursor=pointer]:
+                - /url: /dashboard
+                - img [ref=e22]
+                - paragraph [ref=e25]: Dashboard
+            - listitem [ref=e26]:
+              - link "Worker Directory" [ref=e27] [cursor=pointer]:
+                - /url: /worker-directory
+                - img [ref=e29]
+                - paragraph [ref=e32]: Worker Directory
+            - listitem [ref=e33]:
+              - link "Supplier Registry" [ref=e34] [cursor=pointer]:
+                - /url: /supplier-registry
+                - img [ref=e36]
+                - paragraph [ref=e39]: Supplier Registry
+            - listitem [ref=e40]:
+              - link "Allocation Manager" [ref=e41] [cursor=pointer]:
+                - /url: /allocation-manager
+                - img [ref=e43]
+                - paragraph [ref=e46]: Allocation Manager
+            - listitem [ref=e47]:
+              - link "Attendance Board" [ref=e48] [cursor=pointer]:
+                - /url: /attendance-board
+                - img [ref=e50]
+                - paragraph [ref=e53]: Attendance Board
+            - listitem [ref=e54]:
+              - link "Roster Matrix" [ref=e55] [cursor=pointer]:
+                - /url: /roster-matrix
+                - img [ref=e57]
+                - paragraph [ref=e60]: Roster Matrix
+            - listitem [ref=e61]:
+              - link "Period Close" [ref=e62] [cursor=pointer]:
+                - /url: /period-close-dashboard
+                - img [ref=e64]
+                - paragraph [ref=e67]: Period Close
+        - generic [ref=e68]:
+          - separator [ref=e69]
+          - generic [ref=e70]: Configuration
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Identity & Access" [ref=e73] [cursor=pointer]:
+                - /url: /iam
+                - img [ref=e75]
+                - paragraph [ref=e79]: Identity & Access
+            - listitem [ref=e80]:
+              - link "Hierarchy Manager" [ref=e81] [cursor=pointer]:
+                - /url: /hierarchy
+                - img [ref=e83]
+                - paragraph [ref=e86]: Hierarchy Manager
+            - listitem [ref=e87]:
+              - link "Calendar Manager" [ref=e88] [cursor=pointer]:
+                - /url: /calendar
+                - img [ref=e90]
+                - paragraph [ref=e93]: Calendar Manager
+            - listitem [ref=e94]:
+              - link "Shift Configurator" [ref=e95] [cursor=pointer]:
+                - /url: /shift-configurator
+                - img [ref=e97]
+                - paragraph [ref=e101]: Shift Configurator
+            - listitem [ref=e102]:
+              - link "Rate Card Manager" [ref=e103] [cursor=pointer]:
+                - /url: /rate-card
+                - img [ref=e105]
+                - paragraph [ref=e108]: Rate Card Manager
+      - generic [ref=e109]:
+        - generic [ref=e110]: S
+        - generic [ref=e111]:
+          - paragraph [ref=e112]: superadmin
+          - text: L13
+        - button "Sign out" [ref=e113] [cursor=pointer]:
+          - img [ref=e114]
+  - generic [ref=e116]:
+    - banner [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e120]: Configuration
+        - button "Notifications" [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e125]: "5"
+        - generic "superadmin" [ref=e126] [cursor=pointer]: S
+    - main [ref=e127]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "Act-Specific Calendar Manager" [level=4] [ref=e131]
+            - paragraph [ref=e132]: Configure Poya days and Statutory holidays per Labor Act. Select a brush tool and click days to paint.
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]: Year
+              - generic [ref=e136]:
+                - combobox [ref=e137] [cursor=pointer]: "2026"
+                - textbox: "2026"
+                - img
+                - group:
+                  - generic: Year
+            - generic [ref=e138]:
+              - generic [ref=e139]: Labor Act
+              - generic [ref=e140]:
+                - combobox [ref=e141] [cursor=pointer]: Shop & Office Act
+                - textbox: Shop & Office Act
+                - img
+                - group:
+                  - generic: Labor Act
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - heading "ACTIVE BRUSH:" [level=6] [ref=e145]:
+                - img [ref=e146]
+                - text: "ACTIVE BRUSH:"
+              - button "Normal Working Day" [ref=e148] [cursor=pointer]
+              - button "Poya Day" [ref=e149] [cursor=pointer]:
+                - img [ref=e151]
+                - text: Poya Day
+              - button "Company Holiday" [ref=e153] [cursor=pointer]
+              - button "Statutory Holiday" [ref=e154] [cursor=pointer]
+            - generic [ref=e155]:
+              - button "Publish Updates" [disabled]:
+                - generic:
+                  - img
+                - text: Publish Updates
+          - separator [ref=e156]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - heading "January" [level=6] [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]: S
+                - generic [ref=e162]: M
+                - generic [ref=e163]: T
+                - generic [ref=e164]: W
+                - generic [ref=e165]: T
+                - generic [ref=e166]: F
+                - generic [ref=e167]: S
+              - generic [ref=e168]:
+                - 'generic "Jan 1: Normal Working Day" [ref=e173] [cursor=pointer]': "1"
+                - 'generic "Jan 2: Normal Working Day" [ref=e174] [cursor=pointer]': "2"
+                - 'generic "Jan 3: Normal Working Day" [ref=e175] [cursor=pointer]': "3"
+                - 'generic "Jan 4: Normal Working Day" [ref=e176] [cursor=pointer]': "4"
+                - 'generic "Jan 5: Normal Working Day" [ref=e177] [cursor=pointer]': "5"
+                - 'generic "Jan 6: Normal Working Day" [ref=e178] [cursor=pointer]': "6"
+                - 'generic "Jan 7: Normal Working Day" [ref=e179] [cursor=pointer]': "7"
+                - 'generic "Jan 8: Normal Working Day" [ref=e180] [cursor=pointer]': "8"
+                - 'generic "Jan 9: Normal Working Day" [ref=e181] [cursor=pointer]': "9"
+                - 'generic "Jan 10: Normal Working Day" [ref=e182] [cursor=pointer]': "10"
+                - 'generic "Jan 11: Normal Working Day" [ref=e183] [cursor=pointer]': "11"
+                - 'generic "Jan 12: Normal Working Day" [ref=e184] [cursor=pointer]': "12"
+                - 'generic "Jan 13: Normal Working Day" [ref=e185] [cursor=pointer]': "13"
+                - 'generic "Jan 14: Statutory Holiday" [ref=e186] [cursor=pointer]': "14"
+                - 'generic "Jan 15: Normal Working Day" [ref=e187] [cursor=pointer]': "15"
+                - 'generic "Jan 16: Normal Working Day" [ref=e188] [cursor=pointer]': "16"
+                - 'generic "Jan 17: Normal Working Day" [ref=e189] [cursor=pointer]': "17"
+                - 'generic "Jan 18: Normal Working Day" [ref=e190] [cursor=pointer]': "18"
+                - 'generic "Jan 19: Normal Working Day" [ref=e191] [cursor=pointer]': "19"
+                - 'generic "Jan 20: Normal Working Day" [ref=e192] [cursor=pointer]': "20"
+                - 'generic "Jan 21: Normal Working Day" [ref=e193] [cursor=pointer]': "21"
+                - 'generic "Jan 22: Normal Working Day" [ref=e194] [cursor=pointer]': "22"
+                - 'generic "Jan 23: Normal Working Day" [ref=e195] [cursor=pointer]': "23"
+                - 'generic "Jan 24: Normal Working Day" [ref=e196] [cursor=pointer]': "24"
+                - 'generic "Jan 25: Normal Working Day" [ref=e197] [cursor=pointer]': "25"
+                - 'generic "Jan 26: Normal Working Day" [ref=e198] [cursor=pointer]': "26"
+                - 'generic "Jan 27: Normal Working Day" [ref=e199] [cursor=pointer]': "27"
+                - 'generic "Jan 28: Normal Working Day" [ref=e200] [cursor=pointer]': "28"
+                - 'generic "Jan 29: Normal Working Day" [ref=e201] [cursor=pointer]': "29"
+                - 'generic "Jan 30: Normal Working Day" [ref=e202] [cursor=pointer]': "30"
+                - 'generic "Jan 31: Normal Working Day" [ref=e203] [cursor=pointer]': "31"
+            - generic [ref=e204]:
+              - heading "February" [level=6] [ref=e205]
+              - generic [ref=e206]:
+                - generic [ref=e207]: S
+                - generic [ref=e208]: M
+                - generic [ref=e209]: T
+                - generic [ref=e210]: W
+                - generic [ref=e211]: T
+                - generic [ref=e212]: F
+                - generic [ref=e213]: S
+              - generic [ref=e214]:
+                - 'generic "Feb 1: Normal Working Day" [ref=e215] [cursor=pointer]': "1"
+                - 'generic "Feb 2: Normal Working Day" [ref=e216] [cursor=pointer]': "2"
+                - 'generic "Feb 3: Normal Working Day" [ref=e217] [cursor=pointer]': "3"
+                - 'generic "Feb 4: Statutory Holiday" [ref=e218] [cursor=pointer]': "4"
+                - 'generic "Feb 5: Normal Working Day" [ref=e219] [cursor=pointer]': "5"
+                - 'generic "Feb 6: Normal Working Day" [ref=e220] [cursor=pointer]': "6"
+                - 'generic "Feb 7: Normal Working Day" [ref=e221] [cursor=pointer]': "7"
+                - 'generic "Feb 8: Normal Working Day" [ref=e222] [cursor=pointer]': "8"
+                - 'generic "Feb 9: Normal Working Day" [ref=e223] [cursor=pointer]': "9"
+                - 'generic "Feb 10: Normal Working Day" [ref=e224] [cursor=pointer]': "10"
+                - 'generic "Feb 11: Normal Working Day" [ref=e225] [cursor=pointer]': "11"
+                - 'generic "Feb 12: Normal Working Day" [ref=e226] [cursor=pointer]': "12"
+                - 'generic "Feb 13: Normal Working Day" [ref=e227] [cursor=pointer]': "13"
+                - 'generic "Feb 14: Normal Working Day" [ref=e228] [cursor=pointer]': "14"
+                - 'generic "Feb 15: Normal Working Day" [ref=e229] [cursor=pointer]': "15"
+                - 'generic "Feb 16: Normal Working Day" [ref=e230] [cursor=pointer]': "16"
+                - 'generic "Feb 17: Normal Working Day" [ref=e231] [cursor=pointer]': "17"
+                - 'generic "Feb 18: Normal Working Day" [ref=e232] [cursor=pointer]': "18"
+                - 'generic "Feb 19: Normal Working Day" [ref=e233] [cursor=pointer]': "19"
+                - 'generic "Feb 20: Normal Working Day" [ref=e234] [cursor=pointer]': "20"
+                - 'generic "Feb 21: Normal Working Day" [ref=e235] [cursor=pointer]': "21"
+                - 'generic "Feb 22: Normal Working Day" [ref=e236] [cursor=pointer]': "22"
+                - 'generic "Feb 23: Normal Working Day" [ref=e237] [cursor=pointer]': "23"
+                - 'generic "Feb 24: Normal Working Day" [ref=e238] [cursor=pointer]': "24"
+                - 'generic "Feb 25: Normal Working Day" [ref=e239] [cursor=pointer]': "25"
+                - 'generic "Feb 26: Normal Working Day" [ref=e240] [cursor=pointer]': "26"
+                - 'generic "Feb 27: Normal Working Day" [ref=e241] [cursor=pointer]': "27"
+                - 'generic "Feb 28: Normal Working Day" [ref=e242] [cursor=pointer]': "28"
+            - generic [ref=e243]:
+              - heading "March" [level=6] [ref=e244]
+              - generic [ref=e245]:
+                - generic [ref=e246]: S
+                - generic [ref=e247]: M
+                - generic [ref=e248]: T
+                - generic [ref=e249]: W
+                - generic [ref=e250]: T
+                - generic [ref=e251]: F
+                - generic [ref=e252]: S
+              - generic [ref=e253]:
+                - 'generic "Mar 1: Normal Working Day" [ref=e254] [cursor=pointer]': "1"
+                - 'generic "Mar 2: Normal Working Day" [ref=e255] [cursor=pointer]': "2"
+                - 'generic "Mar 3: Normal Working Day" [ref=e256] [cursor=pointer]': "3"
+                - 'generic "Mar 4: Normal Working Day" [ref=e257] [cursor=pointer]': "4"
+                - 'generic "Mar 5: Normal Working Day" [ref=e258] [cursor=pointer]': "5"
+                - 'generic "Mar 6: Normal Working Day" [ref=e259] [cursor=pointer]': "6"
+                - 'generic "Mar 7: Normal Working Day" [ref=e260] [cursor=pointer]': "7"
+                - 'generic "Mar 8: Normal Working Day" [ref=e261] [cursor=pointer]': "8"
+                - 'generic "Mar 9: Normal Working Day" [ref=e262] [cursor=pointer]': "9"
+                - 'generic "Mar 10: Normal Working Day" [ref=e263] [cursor=pointer]': "10"
+                - 'generic "Mar 11: Normal Working Day" [ref=e264] [cursor=pointer]': "11"
+                - 'generic "Mar 12: Normal Working Day" [ref=e265] [cursor=pointer]': "12"
+                - 'generic "Mar 13: Normal Working Day" [ref=e266] [cursor=pointer]': "13"
+                - 'generic "Mar 14: Normal Working Day" [ref=e267] [cursor=pointer]': "14"
+                - 'generic "Mar 15: Normal Working Day" [ref=e268] [cursor=pointer]': "15"
+                - 'generic "Mar 16: Normal Working Day" [ref=e269] [cursor=pointer]': "16"
+                - 'generic "Mar 17: Normal Working Day" [ref=e270] [cursor=pointer]': "17"
+                - 'generic "Mar 18: Normal Working Day" [ref=e271] [cursor=pointer]': "18"
+                - 'generic "Mar 19: Normal Working Day" [ref=e272] [cursor=pointer]': "19"
+                - 'generic "Mar 20: Normal Working Day" [ref=e273] [cursor=pointer]': "20"
+                - 'generic "Mar 21: Normal Working Day" [ref=e274] [cursor=pointer]': "21"
+                - 'generic "Mar 22: Normal Working Day" [ref=e275] [cursor=pointer]': "22"
+                - 'generic "Mar 23: Normal Working Day" [ref=e276] [cursor=pointer]': "23"
+                - 'generic "Mar 24: Normal Working Day" [ref=e277] [cursor=pointer]': "24"
+                - 'generic "Mar 25: Normal Working Day" [ref=e278] [cursor=pointer]': "25"
+                - 'generic "Mar 26: Normal Working Day" [ref=e279] [cursor=pointer]': "26"
+                - 'generic "Mar 27: Normal Working Day" [ref=e280] [cursor=pointer]': "27"
+                - 'generic "Mar 28: Normal Working Day" [ref=e281] [cursor=pointer]': "28"
+                - 'generic "Mar 29: Normal Working Day" [ref=e282] [cursor=pointer]': "29"
+                - 'generic "Mar 30: Normal Working Day" [ref=e283] [cursor=pointer]': "30"
+                - 'generic "Mar 31: Normal Working Day" [ref=e284] [cursor=pointer]': "31"
+            - generic [ref=e285]:
+              - heading "April" [level=6] [ref=e286]
+              - generic [ref=e287]:
+                - generic [ref=e288]: S
+                - generic [ref=e289]: M
+                - generic [ref=e290]: T
+                - generic [ref=e291]: W
+                - generic [ref=e292]: T
+                - generic [ref=e293]: F
+                - generic [ref=e294]: S
+              - generic [ref=e295]:
+                - 'generic "Apr 1: Normal Working Day" [ref=e299] [cursor=pointer]': "1"
+                - 'generic "Apr 2: Normal Working Day" [ref=e300] [cursor=pointer]': "2"
+                - 'generic "Apr 3: Normal Working Day" [ref=e301] [cursor=pointer]': "3"
+                - 'generic "Apr 4: Normal Working Day" [ref=e302] [cursor=pointer]': "4"
+                - 'generic "Apr 5: Normal Working Day" [ref=e303] [cursor=pointer]': "5"
+                - 'generic "Apr 6: Normal Working Day" [ref=e304] [cursor=pointer]': "6"
+                - 'generic "Apr 7: Normal Working Day" [ref=e305] [cursor=pointer]': "7"
+                - 'generic "Apr 8: Normal Working Day" [ref=e306] [cursor=pointer]': "8"
+                - 'generic "Apr 9: Normal Working Day" [ref=e307] [cursor=pointer]': "9"
+                - 'generic "Apr 10: Normal Working Day" [ref=e308] [cursor=pointer]': "10"
+                - 'generic "Apr 11: Normal Working Day" [ref=e309] [cursor=pointer]': "11"
+                - 'generic "Apr 12: Normal Working Day" [ref=e310] [cursor=pointer]': "12"
+                - 'generic "Apr 13: Statutory Holiday" [ref=e311] [cursor=pointer]': "13"
+                - 'generic "Apr 14: Poya Day" [ref=e312] [cursor=pointer]': "14"
+                - 'generic "Apr 15: Normal Working Day" [ref=e313] [cursor=pointer]': "15"
+                - 'generic "Apr 16: Normal Working Day" [ref=e314] [cursor=pointer]': "16"
+                - 'generic "Apr 17: Normal Working Day" [ref=e315] [cursor=pointer]': "17"
+                - 'generic "Apr 18: Normal Working Day" [ref=e316] [cursor=pointer]': "18"
+                - 'generic "Apr 19: Normal Working Day" [ref=e317] [cursor=pointer]': "19"
+                - 'generic "Apr 20: Normal Working Day" [ref=e318] [cursor=pointer]': "20"
+                - 'generic "Apr 21: Normal Working Day" [ref=e319] [cursor=pointer]': "21"
+                - 'generic "Apr 22: Normal Working Day" [ref=e320] [cursor=pointer]': "22"
+                - 'generic "Apr 23: Normal Working Day" [ref=e321] [cursor=pointer]': "23"
+                - 'generic "Apr 24: Normal Working Day" [ref=e322] [cursor=pointer]': "24"
+                - 'generic "Apr 25: Normal Working Day" [ref=e323] [cursor=pointer]': "25"
+                - 'generic "Apr 26: Normal Working Day" [ref=e324] [cursor=pointer]': "26"
+                - 'generic "Apr 27: Normal Working Day" [ref=e325] [cursor=pointer]': "27"
+                - 'generic "Apr 28: Normal Working Day" [ref=e326] [cursor=pointer]': "28"
+                - 'generic "Apr 29: Normal Working Day" [ref=e327] [cursor=pointer]': "29"
+                - 'generic "Apr 30: Normal Working Day" [ref=e328] [cursor=pointer]': "30"
+            - generic [ref=e329]:
+              - heading "May" [level=6] [ref=e330]
+              - generic [ref=e331]:
+                - generic [ref=e332]: S
+                - generic [ref=e333]: M
+                - generic [ref=e334]: T
+                - generic [ref=e335]: W
+                - generic [ref=e336]: T
+                - generic [ref=e337]: F
+                - generic [ref=e338]: S
+              - generic [ref=e339]:
+                - 'generic "May 1: Statutory Holiday" [ref=e345] [cursor=pointer]': "1"
+                - 'generic "May 2: Normal Working Day" [ref=e346] [cursor=pointer]': "2"
+                - 'generic "May 3: Normal Working Day" [ref=e347] [cursor=pointer]': "3"
+                - 'generic "May 4: Normal Working Day" [ref=e348] [cursor=pointer]': "4"
+                - 'generic "May 5: Normal Working Day" [ref=e349] [cursor=pointer]': "5"
+                - 'generic "May 6: Normal Working Day" [ref=e350] [cursor=pointer]': "6"
+                - 'generic "May 7: Normal Working Day" [ref=e351] [cursor=pointer]': "7"
+                - 'generic "May 8: Normal Working Day" [ref=e352] [cursor=pointer]': "8"
+                - 'generic "May 9: Normal Working Day" [ref=e353] [cursor=pointer]': "9"
+                - 'generic "May 10: Normal Working Day" [ref=e354] [cursor=pointer]': "10"
+                - 'generic "May 11: Normal Working Day" [ref=e355] [cursor=pointer]': "11"
+                - 'generic "May 12: Normal Working Day" [ref=e356] [cursor=pointer]': "12"
+                - 'generic "May 13: Normal Working Day" [ref=e357] [cursor=pointer]': "13"
+                - 'generic "May 14: Normal Working Day" [ref=e358] [cursor=pointer]': "14"
+                - 'generic "May 15: Normal Working Day" [ref=e359] [cursor=pointer]': "15"
+                - 'generic "May 16: Normal Working Day" [ref=e360] [cursor=pointer]': "16"
+                - 'generic "May 17: Normal Working Day" [ref=e361] [cursor=pointer]': "17"
+                - 'generic "May 18: Normal Working Day" [ref=e362] [cursor=pointer]': "18"
+                - 'generic "May 19: Normal Working Day" [ref=e363] [cursor=pointer]': "19"
+                - 'generic "May 20: Normal Working Day" [ref=e364] [cursor=pointer]': "20"
+                - 'generic "May 21: Normal Working Day" [ref=e365] [cursor=pointer]': "21"
+                - 'generic "May 22: Normal Working Day" [ref=e366] [cursor=pointer]': "22"
+                - 'generic "May 23: Normal Working Day" [ref=e367] [cursor=pointer]': "23"
+                - 'generic "May 24: Normal Working Day" [ref=e368] [cursor=pointer]': "24"
+                - 'generic "May 25: Normal Working Day" [ref=e369] [cursor=pointer]': "25"
+                - 'generic "May 26: Normal Working Day" [ref=e370] [cursor=pointer]': "26"
+                - 'generic "May 27: Normal Working Day" [ref=e371] [cursor=pointer]': "27"
+                - 'generic "May 28: Normal Working Day" [ref=e372] [cursor=pointer]': "28"
+                - 'generic "May 29: Normal Working Day" [ref=e373] [cursor=pointer]': "29"
+                - 'generic "May 30: Normal Working Day" [ref=e374] [cursor=pointer]': "30"
+                - 'generic "May 31: Poya Day" [ref=e375] [cursor=pointer]': "31"
+            - generic [ref=e376]:
+              - heading "June" [level=6] [ref=e377]
+              - generic [ref=e378]:
+                - generic [ref=e379]: S
+                - generic [ref=e380]: M
+                - generic [ref=e381]: T
+                - generic [ref=e382]: W
+                - generic [ref=e383]: T
+                - generic [ref=e384]: F
+                - generic [ref=e385]: S
+              - generic [ref=e386]:
+                - 'generic "Jun 1: Normal Working Day" [ref=e388] [cursor=pointer]': "1"
+                - 'generic "Jun 2: Normal Working Day" [ref=e389] [cursor=pointer]': "2"
+                - 'generic "Jun 3: Normal Working Day" [ref=e390] [cursor=pointer]': "3"
+                - 'generic "Jun 4: Normal Working Day" [ref=e391] [cursor=pointer]': "4"
+                - 'generic "Jun 5: Normal Working Day" [ref=e392] [cursor=pointer]': "5"
+                - 'generic "Jun 6: Normal Working Day" [ref=e393] [cursor=pointer]': "6"
+                - 'generic "Jun 7: Normal Working Day" [ref=e394] [cursor=pointer]': "7"
+                - 'generic "Jun 8: Normal Working Day" [ref=e395] [cursor=pointer]': "8"
+                - 'generic "Jun 9: Normal Working Day" [ref=e396] [cursor=pointer]': "9"
+                - 'generic "Jun 10: Normal Working Day" [ref=e397] [cursor=pointer]': "10"
+                - 'generic "Jun 11: Normal Working Day" [ref=e398] [cursor=pointer]': "11"
+                - 'generic "Jun 12: Normal Working Day" [ref=e399] [cursor=pointer]': "12"
+                - 'generic "Jun 13: Normal Working Day" [ref=e400] [cursor=pointer]': "13"
+                - 'generic "Jun 14: Normal Working Day" [ref=e401] [cursor=pointer]': "14"
+                - 'generic "Jun 15: Normal Working Day" [ref=e402] [cursor=pointer]': "15"
+                - 'generic "Jun 16: Normal Working Day" [ref=e403] [cursor=pointer]': "16"
+                - 'generic "Jun 17: Normal Working Day" [ref=e404] [cursor=pointer]': "17"
+                - 'generic "Jun 18: Normal Working Day" [ref=e405] [cursor=pointer]': "18"
+                - 'generic "Jun 19: Normal Working Day" [ref=e406] [cursor=pointer]': "19"
+                - 'generic "Jun 20: Normal Working Day" [ref=e407] [cursor=pointer]': "20"
+                - 'generic "Jun 21: Normal Working Day" [ref=e408] [cursor=pointer]': "21"
+                - 'generic "Jun 22: Normal Working Day" [ref=e409] [cursor=pointer]': "22"
+                - 'generic "Jun 23: Normal Working Day" [ref=e410] [cursor=pointer]': "23"
+                - 'generic "Jun 24: Normal Working Day" [ref=e411] [cursor=pointer]': "24"
+                - 'generic "Jun 25: Normal Working Day" [ref=e412] [cursor=pointer]': "25"
+                - 'generic "Jun 26: Normal Working Day" [ref=e413] [cursor=pointer]': "26"
+                - 'generic "Jun 27: Normal Working Day" [ref=e414] [cursor=pointer]': "27"
+                - 'generic "Jun 28: Normal Working Day" [ref=e415] [cursor=pointer]': "28"
+                - 'generic "Jun 29: Normal Working Day" [ref=e416] [cursor=pointer]': "29"
+                - 'generic "Jun 30: Normal Working Day" [ref=e417] [cursor=pointer]': "30"
+            - generic [ref=e418]:
+              - heading "July" [level=6] [ref=e419]
+              - generic [ref=e420]:
+                - generic [ref=e421]: S
+                - generic [ref=e422]: M
+                - generic [ref=e423]: T
+                - generic [ref=e424]: W
+                - generic [ref=e425]: T
+                - generic [ref=e426]: F
+                - generic [ref=e427]: S
+              - generic [ref=e428]:
+                - 'generic "Jul 1: Normal Working Day" [ref=e432] [cursor=pointer]': "1"
+                - 'generic "Jul 2: Normal Working Day" [ref=e433] [cursor=pointer]': "2"
+                - 'generic "Jul 3: Normal Working Day" [ref=e434] [cursor=pointer]': "3"
+                - 'generic "Jul 4: Normal Working Day" [ref=e435] [cursor=pointer]': "4"
+                - 'generic "Jul 5: Normal Working Day" [ref=e436] [cursor=pointer]': "5"
+                - 'generic "Jul 6: Normal Working Day" [ref=e437] [cursor=pointer]': "6"
+                - 'generic "Jul 7: Normal Working Day" [ref=e438] [cursor=pointer]': "7"
+                - 'generic "Jul 8: Normal Working Day" [ref=e439] [cursor=pointer]': "8"
+                - 'generic "Jul 9: Normal Working Day" [ref=e440] [cursor=pointer]': "9"
+                - 'generic "Jul 10: Normal Working Day" [ref=e441] [cursor=pointer]': "10"
+                - 'generic "Jul 11: Normal Working Day" [ref=e442] [cursor=pointer]': "11"
+                - 'generic "Jul 12: Normal Working Day" [ref=e443] [cursor=pointer]': "12"
+                - 'generic "Jul 13: Normal Working Day" [ref=e444] [cursor=pointer]': "13"
+                - 'generic "Jul 14: Normal Working Day" [ref=e445] [cursor=pointer]': "14"
+                - 'generic "Jul 15: Normal Working Day" [ref=e446] [cursor=pointer]': "15"
+                - 'generic "Jul 16: Normal Working Day" [ref=e447] [cursor=pointer]': "16"
+                - 'generic "Jul 17: Normal Working Day" [ref=e448] [cursor=pointer]': "17"
+                - 'generic "Jul 18: Normal Working Day" [ref=e449] [cursor=pointer]': "18"
+                - 'generic "Jul 19: Normal Working Day" [ref=e450] [cursor=pointer]': "19"
+                - 'generic "Jul 20: Normal Working Day" [ref=e451] [cursor=pointer]': "20"
+                - 'generic "Jul 21: Normal Working Day" [ref=e452] [cursor=pointer]': "21"
+                - 'generic "Jul 22: Normal Working Day" [ref=e453] [cursor=pointer]': "22"
+                - 'generic "Jul 23: Normal Working Day" [ref=e454] [cursor=pointer]': "23"
+                - 'generic "Jul 24: Normal Working Day" [ref=e455] [cursor=pointer]': "24"
+                - 'generic "Jul 25: Normal Working Day" [ref=e456] [cursor=pointer]': "25"
+                - 'generic "Jul 26: Normal Working Day" [ref=e457] [cursor=pointer]': "26"
+                - 'generic "Jul 27: Normal Working Day" [ref=e458] [cursor=pointer]': "27"
+                - 'generic "Jul 28: Normal Working Day" [ref=e459] [cursor=pointer]': "28"
+                - 'generic "Jul 29: Normal Working Day" [ref=e460] [cursor=pointer]': "29"
+                - 'generic "Jul 30: Normal Working Day" [ref=e461] [cursor=pointer]': "30"
+                - 'generic "Jul 31: Normal Working Day" [ref=e462] [cursor=pointer]': "31"
+            - generic [ref=e463]:
+              - heading "August" [level=6] [ref=e464]
+              - generic [ref=e465]:
+                - generic [ref=e466]: S
+                - generic [ref=e467]: M
+                - generic [ref=e468]: T
+                - generic [ref=e469]: W
+                - generic [ref=e470]: T
+                - generic [ref=e471]: F
+                - generic [ref=e472]: S
+              - generic [ref=e473]:
+                - 'generic "Aug 1: Normal Working Day" [ref=e480] [cursor=pointer]': "1"
+                - 'generic "Aug 2: Normal Working Day" [ref=e481] [cursor=pointer]': "2"
+                - 'generic "Aug 3: Normal Working Day" [ref=e482] [cursor=pointer]': "3"
+                - 'generic "Aug 4: Normal Working Day" [ref=e483] [cursor=pointer]': "4"
+                - 'generic "Aug 5: Normal Working Day" [ref=e484] [cursor=pointer]': "5"
+                - 'generic "Aug 6: Normal Working Day" [ref=e485] [cursor=pointer]': "6"
+                - 'generic "Aug 7: Normal Working Day" [ref=e486] [cursor=pointer]': "7"
+                - 'generic "Aug 8: Normal Working Day" [ref=e487] [cursor=pointer]': "8"
+                - 'generic "Aug 9: Normal Working Day" [ref=e488] [cursor=pointer]': "9"
+                - 'generic "Aug 10: Normal Working Day" [ref=e489] [cursor=pointer]': "10"
+                - 'generic "Aug 11: Normal Working Day" [ref=e490] [cursor=pointer]': "11"
+                - 'generic "Aug 12: Normal Working Day" [ref=e491] [cursor=pointer]': "12"
+                - 'generic "Aug 13: Normal Working Day" [ref=e492] [cursor=pointer]': "13"
+                - 'generic "Aug 14: Normal Working Day" [ref=e493] [cursor=pointer]': "14"
+                - 'generic "Aug 15: Normal Working Day" [ref=e494] [cursor=pointer]': "15"
+                - 'generic "Aug 16: Normal Working Day" [ref=e495] [cursor=pointer]': "16"
+                - 'generic "Aug 17: Normal Working Day" [ref=e496] [cursor=pointer]': "17"
+                - 'generic "Aug 18: Normal Working Day" [ref=e497] [cursor=pointer]': "18"
+                - 'generic "Aug 19: Normal Working Day" [ref=e498] [cursor=pointer]': "19"
+                - 'generic "Aug 20: Normal Working Day" [ref=e499] [cursor=pointer]': "20"
+                - 'generic "Aug 21: Normal Working Day" [ref=e500] [cursor=pointer]': "21"
+                - 'generic "Aug 22: Normal Working Day" [ref=e501] [cursor=pointer]': "22"
+                - 'generic "Aug 23: Normal Working Day" [ref=e502] [cursor=pointer]': "23"
+                - 'generic "Aug 24: Normal Working Day" [ref=e503] [cursor=pointer]': "24"
+                - 'generic "Aug 25: Normal Working Day" [ref=e504] [cursor=pointer]': "25"
+                - 'generic "Aug 26: Normal Working Day" [ref=e505] [cursor=pointer]': "26"
+                - 'generic "Aug 27: Normal Working Day" [ref=e506] [cursor=pointer]': "27"
+                - 'generic "Aug 28: Normal Working Day" [ref=e507] [cursor=pointer]': "28"
+                - 'generic "Aug 29: Normal Working Day" [ref=e508] [cursor=pointer]': "29"
+                - 'generic "Aug 30: Normal Working Day" [ref=e509] [cursor=pointer]': "30"
+                - 'generic "Aug 31: Normal Working Day" [ref=e510] [cursor=pointer]': "31"
+            - generic [ref=e511]:
+              - heading "September" [level=6] [ref=e512]
+              - generic [ref=e513]:
+                - generic [ref=e514]: S
+                - generic [ref=e515]: M
+                - generic [ref=e516]: T
+                - generic [ref=e517]: W
+                - generic [ref=e518]: T
+                - generic [ref=e519]: F
+                - generic [ref=e520]: S
+              - generic [ref=e521]:
+                - 'generic "Sep 1: Normal Working Day" [ref=e524] [cursor=pointer]': "1"
+                - 'generic "Sep 2: Normal Working Day" [ref=e525] [cursor=pointer]': "2"
+                - 'generic "Sep 3: Normal Working Day" [ref=e526] [cursor=pointer]': "3"
+                - 'generic "Sep 4: Normal Working Day" [ref=e527] [cursor=pointer]': "4"
+                - 'generic "Sep 5: Normal Working Day" [ref=e528] [cursor=pointer]': "5"
+                - 'generic "Sep 6: Normal Working Day" [ref=e529] [cursor=pointer]': "6"
+                - 'generic "Sep 7: Normal Working Day" [ref=e530] [cursor=pointer]': "7"
+                - 'generic "Sep 8: Normal Working Day" [ref=e531] [cursor=pointer]': "8"
+                - 'generic "Sep 9: Normal Working Day" [ref=e532] [cursor=pointer]': "9"
+                - 'generic "Sep 10: Normal Working Day" [ref=e533] [cursor=pointer]': "10"
+                - 'generic "Sep 11: Normal Working Day" [ref=e534] [cursor=pointer]': "11"
+                - 'generic "Sep 12: Normal Working Day" [ref=e535] [cursor=pointer]': "12"
+                - 'generic "Sep 13: Normal Working Day" [ref=e536] [cursor=pointer]': "13"
+                - 'generic "Sep 14: Normal Working Day" [ref=e537] [cursor=pointer]': "14"
+                - 'generic "Sep 15: Normal Working Day" [ref=e538] [cursor=pointer]': "15"
+                - 'generic "Sep 16: Normal Working Day" [ref=e539] [cursor=pointer]': "16"
+                - 'generic "Sep 17: Normal Working Day" [ref=e540] [cursor=pointer]': "17"
+                - 'generic "Sep 18: Normal Working Day" [ref=e541] [cursor=pointer]': "18"
+                - 'generic "Sep 19: Normal Working Day" [ref=e542] [cursor=pointer]': "19"
+                - 'generic "Sep 20: Normal Working Day" [ref=e543] [cursor=pointer]': "20"
+                - 'generic "Sep 21: Normal Working Day" [ref=e544] [cursor=pointer]': "21"
+                - 'generic "Sep 22: Normal Working Day" [ref=e545] [cursor=pointer]': "22"
+                - 'generic "Sep 23: Normal Working Day" [ref=e546] [cursor=pointer]': "23"
+                - 'generic "Sep 24: Normal Working Day" [ref=e547] [cursor=pointer]': "24"
+                - 'generic "Sep 25: Normal Working Day" [ref=e548] [cursor=pointer]': "25"
+                - 'generic "Sep 26: Normal Working Day" [ref=e549] [cursor=pointer]': "26"
+                - 'generic "Sep 27: Normal Working Day" [ref=e550] [cursor=pointer]': "27"
+                - 'generic "Sep 28: Normal Working Day" [ref=e551] [cursor=pointer]': "28"
+                - 'generic "Sep 29: Normal Working Day" [ref=e552] [cursor=pointer]': "29"
+                - 'generic "Sep 30: Normal Working Day" [ref=e553] [cursor=pointer]': "30"
+            - generic [ref=e554]:
+              - heading "October" [level=6] [ref=e555]
+              - generic [ref=e556]:
+                - generic [ref=e557]: S
+                - generic [ref=e558]: M
+                - generic [ref=e559]: T
+                - generic [ref=e560]: W
+                - generic [ref=e561]: T
+                - generic [ref=e562]: F
+                - generic [ref=e563]: S
+              - generic [ref=e564]:
+                - 'generic "Oct 1: Normal Working Day" [ref=e569] [cursor=pointer]': "1"
+                - 'generic "Oct 2: Normal Working Day" [ref=e570] [cursor=pointer]': "2"
+                - 'generic "Oct 3: Normal Working Day" [ref=e571] [cursor=pointer]': "3"
+                - 'generic "Oct 4: Normal Working Day" [ref=e572] [cursor=pointer]': "4"
+                - 'generic "Oct 5: Normal Working Day" [ref=e573] [cursor=pointer]': "5"
+                - 'generic "Oct 6: Normal Working Day" [ref=e574] [cursor=pointer]': "6"
+                - 'generic "Oct 7: Normal Working Day" [ref=e575] [cursor=pointer]': "7"
+                - 'generic "Oct 8: Normal Working Day" [ref=e576] [cursor=pointer]': "8"
+                - 'generic "Oct 9: Normal Working Day" [ref=e577] [cursor=pointer]': "9"
+                - 'generic "Oct 10: Normal Working Day" [ref=e578] [cursor=pointer]': "10"
+                - 'generic "Oct 11: Normal Working Day" [ref=e579] [cursor=pointer]': "11"
+                - 'generic "Oct 12: Normal Working Day" [ref=e580] [cursor=pointer]': "12"
+                - 'generic "Oct 13: Normal Working Day" [ref=e581] [cursor=pointer]': "13"
+                - 'generic "Oct 14: Normal Working Day" [ref=e582] [cursor=pointer]': "14"
+                - 'generic "Oct 15: Normal Working Day" [ref=e583] [cursor=pointer]': "15"
+                - 'generic "Oct 16: Normal Working Day" [ref=e584] [cursor=pointer]': "16"
+                - 'generic "Oct 17: Normal Working Day" [ref=e585] [cursor=pointer]': "17"
+                - 'generic "Oct 18: Normal Working Day" [ref=e586] [cursor=pointer]': "18"
+                - 'generic "Oct 19: Normal Working Day" [ref=e587] [cursor=pointer]': "19"
+                - 'generic "Oct 20: Normal Working Day" [ref=e588] [cursor=pointer]': "20"
+                - 'generic "Oct 21: Normal Working Day" [ref=e589] [cursor=pointer]': "21"
+                - 'generic "Oct 22: Normal Working Day" [ref=e590] [cursor=pointer]': "22"
+                - 'generic "Oct 23: Normal Working Day" [ref=e591] [cursor=pointer]': "23"
+                - 'generic "Oct 24: Normal Working Day" [ref=e592] [cursor=pointer]': "24"
+                - 'generic "Oct 25: Normal Working Day" [ref=e593] [cursor=pointer]': "25"
+                - 'generic "Oct 26: Normal Working Day" [ref=e594] [cursor=pointer]': "26"
+                - 'generic "Oct 27: Normal Working Day" [ref=e595] [cursor=pointer]': "27"
+                - 'generic "Oct 28: Normal Working Day" [ref=e596] [cursor=pointer]': "28"
+                - 'generic "Oct 29: Normal Working Day" [ref=e597] [cursor=pointer]': "29"
+                - 'generic "Oct 30: Normal Working Day" [ref=e598] [cursor=pointer]': "30"
+                - 'generic "Oct 31: Normal Working Day" [ref=e599] [cursor=pointer]': "31"
+            - generic [ref=e600]:
+              - heading "November" [level=6] [ref=e601]
+              - generic [ref=e602]:
+                - generic [ref=e603]: S
+                - generic [ref=e604]: M
+                - generic [ref=e605]: T
+                - generic [ref=e606]: W
+                - generic [ref=e607]: T
+                - generic [ref=e608]: F
+                - generic [ref=e609]: S
+              - generic [ref=e610]:
+                - 'generic "Nov 1: Normal Working Day" [ref=e611] [cursor=pointer]': "1"
+                - 'generic "Nov 2: Normal Working Day" [ref=e612] [cursor=pointer]': "2"
+                - 'generic "Nov 3: Normal Working Day" [ref=e613] [cursor=pointer]': "3"
+                - 'generic "Nov 4: Normal Working Day" [ref=e614] [cursor=pointer]': "4"
+                - 'generic "Nov 5: Normal Working Day" [ref=e615] [cursor=pointer]': "5"
+                - 'generic "Nov 6: Normal Working Day" [ref=e616] [cursor=pointer]': "6"
+                - 'generic "Nov 7: Normal Working Day" [ref=e617] [cursor=pointer]': "7"
+                - 'generic "Nov 8: Normal Working Day" [ref=e618] [cursor=pointer]': "8"
+                - 'generic "Nov 9: Normal Working Day" [ref=e619] [cursor=pointer]': "9"
+                - 'generic "Nov 10: Normal Working Day" [ref=e620] [cursor=pointer]': "10"
+                - 'generic "Nov 11: Normal Working Day" [ref=e621] [cursor=pointer]': "11"
+                - 'generic "Nov 12: Normal Working Day" [ref=e622] [cursor=pointer]': "12"
+                - 'generic "Nov 13: Normal Working Day" [ref=e623] [cursor=pointer]': "13"
+                - 'generic "Nov 14: Normal Working Day" [ref=e624] [cursor=pointer]': "14"
+                - 'generic "Nov 15: Normal Working Day" [ref=e625] [cursor=pointer]': "15"
+                - 'generic "Nov 16: Normal Working Day" [ref=e626] [cursor=pointer]': "16"
+                - 'generic "Nov 17: Normal Working Day" [ref=e627] [cursor=pointer]': "17"
+                - 'generic "Nov 18: Normal Working Day" [ref=e628] [cursor=pointer]': "18"
+                - 'generic "Nov 19: Normal Working Day" [ref=e629] [cursor=pointer]': "19"
+                - 'generic "Nov 20: Normal Working Day" [ref=e630] [cursor=pointer]': "20"
+                - 'generic "Nov 21: Normal Working Day" [ref=e631] [cursor=pointer]': "21"
+                - 'generic "Nov 22: Normal Working Day" [ref=e632] [cursor=pointer]': "22"
+                - 'generic "Nov 23: Normal Working Day" [ref=e633] [cursor=pointer]': "23"
+                - 'generic "Nov 24: Normal Working Day" [ref=e634] [cursor=pointer]': "24"
+                - 'generic "Nov 25: Normal Working Day" [ref=e635] [cursor=pointer]': "25"
+                - 'generic "Nov 26: Normal Working Day" [ref=e636] [cursor=pointer]': "26"
+                - 'generic "Nov 27: Normal Working Day" [ref=e637] [cursor=pointer]': "27"
+                - 'generic "Nov 28: Normal Working Day" [ref=e638] [cursor=pointer]': "28"
+                - 'generic "Nov 29: Normal Working Day" [ref=e639] [cursor=pointer]': "29"
+                - 'generic "Nov 30: Normal Working Day" [ref=e640] [cursor=pointer]': "30"
+            - generic [ref=e641]:
+              - heading "December" [level=6] [ref=e642]
+              - generic [ref=e643]:
+                - generic [ref=e644]: S
+                - generic [ref=e645]: M
+                - generic [ref=e646]: T
+                - generic [ref=e647]: W
+                - generic [ref=e648]: T
+                - generic [ref=e649]: F
+                - generic [ref=e650]: S
+              - generic [ref=e651]:
+                - 'generic "Dec 1: Normal Working Day" [ref=e654] [cursor=pointer]': "1"
+                - 'generic "Dec 2: Normal Working Day" [ref=e655] [cursor=pointer]': "2"
+                - 'generic "Dec 3: Normal Working Day" [ref=e656] [cursor=pointer]': "3"
+                - 'generic "Dec 4: Normal Working Day" [ref=e657] [cursor=pointer]': "4"
+                - 'generic "Dec 5: Normal Working Day" [ref=e658] [cursor=pointer]': "5"
+                - 'generic "Dec 6: Normal Working Day" [ref=e659] [cursor=pointer]': "6"
+                - 'generic "Dec 7: Normal Working Day" [ref=e660] [cursor=pointer]': "7"
+                - 'generic "Dec 8: Normal Working Day" [ref=e661] [cursor=pointer]': "8"
+                - 'generic "Dec 9: Normal Working Day" [ref=e662] [cursor=pointer]': "9"
+                - 'generic "Dec 10: Normal Working Day" [ref=e663] [cursor=pointer]': "10"
+                - 'generic "Dec 11: Normal Working Day" [ref=e664] [cursor=pointer]': "11"
+                - 'generic "Dec 12: Normal Working Day" [ref=e665] [cursor=pointer]': "12"
+                - 'generic "Dec 13: Normal Working Day" [ref=e666] [cursor=pointer]': "13"
+                - 'generic "Dec 14: Normal Working Day" [ref=e667] [cursor=pointer]': "14"
+                - 'generic "Dec 15: Normal Working Day" [ref=e668] [cursor=pointer]': "15"
+                - 'generic "Dec 16: Normal Working Day" [ref=e669] [cursor=pointer]': "16"
+                - 'generic "Dec 17: Normal Working Day" [ref=e670] [cursor=pointer]': "17"
+                - 'generic "Dec 18: Normal Working Day" [ref=e671] [cursor=pointer]': "18"
+                - 'generic "Dec 19: Normal Working Day" [ref=e672] [cursor=pointer]': "19"
+                - 'generic "Dec 20: Normal Working Day" [ref=e673] [cursor=pointer]': "20"
+                - 'generic "Dec 21: Normal Working Day" [ref=e674] [cursor=pointer]': "21"
+                - 'generic "Dec 22: Normal Working Day" [ref=e675] [cursor=pointer]': "22"
+                - 'generic "Dec 23: Normal Working Day" [ref=e676] [cursor=pointer]': "23"
+                - 'generic "Dec 24: Normal Working Day" [ref=e677] [cursor=pointer]': "24"
+                - 'generic "Dec 25: Statutory Holiday" [ref=e678] [cursor=pointer]': "25"
+                - 'generic "Dec 26: Normal Working Day" [ref=e679] [cursor=pointer]': "26"
+                - 'generic "Dec 27: Normal Working Day" [ref=e680] [cursor=pointer]': "27"
+                - 'generic "Dec 28: Normal Working Day" [ref=e681] [cursor=pointer]': "28"
+                - 'generic "Dec 29: Normal Working Day" [ref=e682] [cursor=pointer]': "29"
+                - 'generic "Dec 30: Normal Working Day" [ref=e683] [cursor=pointer]': "30"
+                - 'generic "Dec 31: Normal Working Day" [ref=e684] [cursor=pointer]': "31"
+```

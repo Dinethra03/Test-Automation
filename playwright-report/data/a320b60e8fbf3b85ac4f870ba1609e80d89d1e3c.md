@@ -26,12 +26,12 @@
       - generic [ref=e25]: Username or Email
       - generic [ref=e27]:
         - img [ref=e29]
-        - textbox "you@company.com" [ref=e31]: superadmin@advantis.com
+        - textbox "you@company.com" [ref=e31]: admin
         - group
       - generic [ref=e32]: Password
       - generic [ref=e34]:
         - img [ref=e36]
-        - textbox "••••••••" [ref=e38]: Admin1234!
+        - textbox "••••••••" [ref=e38]: password
         - button [ref=e40] [cursor=pointer]:
           - img [ref=e41]
         - group
