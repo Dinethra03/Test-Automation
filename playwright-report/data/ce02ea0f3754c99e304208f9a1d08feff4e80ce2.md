@@ -145,45 +145,49 @@
                   - img [ref=e191]
                   - generic [ref=e194]: HQ Furniture Fabrication Factory
                   - img [ref=e195]
-              - button [ref=e197] [cursor=pointer]:
-                - img [ref=e198]
-                - generic [ref=e201]: AgriCorp (Pvt) Ltd
-                - img [ref=e202]
-          - generic [ref=e206]:
-            - generic [ref=e207]: PROJECT DETAILS
-            - heading [level=4] [ref=e208]: Metro Line Extension — Phase 2
-            - separator [ref=e209]
-            - button [ref=e211] [cursor=pointer]:
-              - img [ref=e213]
+                - button [ref=e197] [cursor=pointer]:
+                  - img [ref=e198]
+                  - generic [ref=e201]: New Metro Project
+                  - img [ref=e202]
+              - button [ref=e204] [cursor=pointer]:
+                - img [ref=e205]
+                - generic [ref=e208]: AgriCorp (Pvt) Ltd
+                - img [ref=e209]
+          - generic [ref=e213]:
+            - generic [ref=e214]: PROJECT DETAILS
+            - heading [level=4] [ref=e215]: Metro Line Extension — Phase 2
+            - separator [ref=e216]
+            - button [ref=e218] [cursor=pointer]:
+              - img [ref=e220]
               - text: Add Site to Metro Line Extension — Phase 2
-  - dialog [active] [ref=e216]:
-    - generic [ref=e217]:
-      - heading "Create New Site" [level=6] [ref=e218]
-      - paragraph [ref=e219]: "Under parent: Metro Line Extension — Phase 2"
-      - generic [ref=e220]:
-        - generic [ref=e221]:
+  - dialog [active] [ref=e223]:
+    - generic [ref=e224]:
+      - heading "Create New Site" [level=6] [ref=e225]
+      - paragraph [ref=e226]: "Under parent: Metro Line Extension — Phase 2"
+      - generic [ref=e227]:
+        - generic [ref=e228]:
           - generic: Name
-          - generic [ref=e222]:
-            - textbox "Name" [ref=e223]
+          - generic [ref=e229]:
+            - textbox "Name" [ref=e230]
             - group:
               - generic: Name
-        - generic [ref=e224]:
+        - generic [ref=e231]:
           - generic: Location Code
-          - generic [ref=e225]:
-            - textbox "Location Code" [ref=e226]:
+          - generic [ref=e232]:
+            - textbox "Location Code" [ref=e233]:
               - /placeholder: e.g. STN01
             - group:
               - generic: Location Code
-        - generic [ref=e227]:
+        - generic [ref=e234]:
           - generic: Cost Center ID
-          - generic [ref=e228]:
-            - textbox "Cost Center ID" [ref=e229]
+          - generic [ref=e235]:
+            - textbox "Cost Center ID" [ref=e236]
             - group:
               - generic: Cost Center ID
-        - generic [ref=e230] [cursor=pointer]:
-          - switch "Active Status" [checked] [ref=e233]
-          - generic [ref=e236]: Active Status
-        - generic [ref=e237]:
-          - button "Cancel" [ref=e238] [cursor=pointer]
-          - button "Save" [ref=e239] [cursor=pointer]
+        - generic [ref=e237] [cursor=pointer]:
+          - switch "Active Status" [checked] [ref=e240]
+          - generic [ref=e243]: Active Status
+        - generic [ref=e244]:
+          - button "Cancel" [ref=e245] [cursor=pointer]
+          - button "Save" [ref=e246] [cursor=pointer]
 ```

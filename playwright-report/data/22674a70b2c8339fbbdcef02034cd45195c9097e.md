@@ -144,15 +144,19 @@
                 - img [ref=e191]
                 - generic [ref=e194]: HQ Furniture Fabrication Factory
                 - img [ref=e195]
-            - button "AgriCorp (Pvt) Ltd" [ref=e197] [cursor=pointer]:
-              - img [ref=e198]
-              - generic [ref=e201]: AgriCorp (Pvt) Ltd
-              - img [ref=e202]
-        - generic [ref=e206]:
-          - generic [ref=e207]: PROJECT DETAILS
-          - heading "Metro Line Extension — Phase 2" [level=4] [ref=e208]
-          - separator [ref=e209]
-          - button "Add Site to Metro Line Extension — Phase 2" [active] [ref=e211] [cursor=pointer]:
-            - img [ref=e213]
+              - button "New Metro Project" [ref=e197] [cursor=pointer]:
+                - img [ref=e198]
+                - generic [ref=e201]: New Metro Project
+                - img [ref=e202]
+            - button "AgriCorp (Pvt) Ltd" [ref=e204] [cursor=pointer]:
+              - img [ref=e205]
+              - generic [ref=e208]: AgriCorp (Pvt) Ltd
+              - img [ref=e209]
+        - generic [ref=e213]:
+          - generic [ref=e214]: PROJECT DETAILS
+          - heading "Metro Line Extension — Phase 2" [level=4] [ref=e215]
+          - separator [ref=e216]
+          - button "Add Site to Metro Line Extension — Phase 2" [active] [ref=e218] [cursor=pointer]:
+            - img [ref=e220]
             - text: Add Site to Metro Line Extension — Phase 2
 ```
